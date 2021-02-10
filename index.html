@@ -28,13 +28,13 @@ body{
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
+    weekday[0] = "Domingo";
+    weekday[1] = "Lunes";
+    weekday[2] = "Martes";
+    weekday[3] = "Miercoles";
+    weekday[4] = "Jueves";
+    weekday[5] = "Viernes";
+    weekday[6] = "Sabado";
 
     
     var today = new Date();
@@ -45,13 +45,13 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = 'Buenos Dias  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = 'Buenas Tardes ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = 'Buenas Noches  ';
 
     document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> It's ${date}</div>`;
+        greet+="Santiago" +`<div id="date"> Es ${date}</div>`;
 </script> 
 </html>
